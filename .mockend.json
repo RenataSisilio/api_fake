@@ -18,10 +18,10 @@
     },
     "Transaction":{
         "id":{
-            "int":{}
+            "int": { "min": 0, "max": 1000000 }
         },
         "value":{
-            "int":{}
+            "int": { "min": 1, "max": 1000000 }
         },
         "description":{
             "loremWords": { "minLength": 5, "maxLength": 20 }
