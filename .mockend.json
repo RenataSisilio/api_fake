@@ -27,7 +27,7 @@
             "loremWords": { "minLength": 5, "maxLength": 20 }
         },
         "category":{
-            "int":["1","2","3","4","5"]
+            "int":{"min":1,"max":5}
         },
         "payment":{
             "string":["normal","parcelled","fixed"]
@@ -44,7 +44,7 @@
     },
     "Category":{
         "id":{
-            "int":["1","2","3","4","5"]
+            "int":{"min":1,"max":5}
         },
         "name":{
             "regexp": "[A-Z][a-z]{5,10}"
